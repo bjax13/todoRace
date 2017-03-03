@@ -1,4 +1,4 @@
-module.exports = [
+var todos = [
     {
         task: 'mow the lawn',
         complete: true,
@@ -25,3 +25,5 @@ module.exports = [
         id: '65en7r'
     }
 ]
+
+module.exports = todos;
