@@ -19,10 +19,10 @@ body{
 }
 .wrap{
 	width: 300px;
-	height: 350px;
+	height: 80vh;
 	margin: 50px auto;
 	border-radius: 20px;
-	border: solid 8px #2c3033;
+	border: solid 2px #2b2b2b;
 	background: white;
 	box-shadow: 0 0 0px 1px rgba(255,255,255,.4),
 						0 0 0px 3px #2c3033;
@@ -46,7 +46,7 @@ span{
 	border-bottom: dashed 2px #54687a;
 }
 .wrap-list{
-	height: 85%;
+	height: 72vh;
 	padding: 20px 0px;
 	box-shadow: inset 0 0px 5px black;
 	border-radius: 0 0 10px 10px;
@@ -55,8 +55,16 @@ span{
 
 input[type="checkbox"]{
   position: relative;
-  top: 14px;
+  top: 21px;
   right: 12px;
+	float: right;
+}
+input[type="submit"]{
+  background: #E6E6EB;
+  font-size: 20px;
+  position: relative;
+  top: 14px;
+  right: 7px;
 	float: right;
 }
 input[type="checkbox"]:checked + label{
@@ -80,4 +88,24 @@ label{
 	float: left;
 	width: 95%;
 	transition: all .3s ease;
+}
+.addNewTask{
+  border-bottom: solid #000 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.addNewTaskItem{
+  width: 50%;
+  background: #E6E6EB;
+}
+.addNewTaskItemInput{
+  border-left: solid #000 1px;
+  padding-left: 5px;
+}
+.dbuttonstyle{
+  padding: 5px;
+  margin-right: 5px;
+  border: dashed #000 1px;
+  border-radius: 5px;
 }

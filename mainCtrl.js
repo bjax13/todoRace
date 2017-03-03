@@ -4,6 +4,7 @@ var uuidV4 = require('uuid/v4');
 module.exports = {
 
   addTodo: function(req, res){
+    console.log("body",req.body)
     var newTodo = {
       task: req.body.task,
       complete: req.body.complete,

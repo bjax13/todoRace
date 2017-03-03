@@ -1,27 +1,22 @@
 <div class="wrap">
-  	<div class="header"><span>Todo List</span></div>
+  	<div class="header"><span>Todo List</span>
+    </div>
 		<div class="wrap-list">
+      <ol class="list">
+				<li class="addNewTask">
+					<label class="addNewTaskItem">Add New Task</label>
+          <input class="addNewTaskItem addNewTaskItemInput" placeholder="New Task ?" ng-model="todo">
+          <dbutton class="dbuttonstyle" ng-click="postTask(todo)"> Add
+          </dbutton>
+				</li>
+			</ol>
 			<ol class="list">
-				<li>
+				<li ng-repeat="task in todoItems">
+          <input type="submit" id="check-1" value="x" class="deletedb">
 					<input type="checkbox" id="check-1" checked="checked">
-					<label for="check-1">Shop</label>
+					<label>{{task.task}}</label>
 				</li>
-				<li>
-					<input type="checkbox" id="check-2">
-					<label for="check-2">Practice</label>
-				</li>
-				<li>
-					<input type="checkbox" id="check-3">
-					<label for="check-3">Sleep</label>
-				</li>
-				<li>
-					<input type="checkbox" id="check-4">
-					<label for="check-4">Enjoy life</label>
-				</li>
-				<li>
-					<input type="checkbox" id="check-5" checked="checked">
-					<label for="check-5">Do something</label>
-				</li>
+
 			</ol>
 		</div>
 	</div>
