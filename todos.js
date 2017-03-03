@@ -1,4 +1,4 @@
-let todos = [
+module.exports = [
     {
         task: 'mow the lawn',
         complete: true,
